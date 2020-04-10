@@ -24,7 +24,7 @@ app.use(
     })
 );
 app.get('/api/house/all', controller.getAllHouses)
-//app.delete('/api/delete_house/:id', controller.deleteHouse)
+//app.delete('/api/house/:id', controller.deleteHouse)
 app.post('/api/house/', controller.addNewHouse)
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}!`))
